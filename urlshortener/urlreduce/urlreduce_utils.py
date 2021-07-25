@@ -23,11 +23,15 @@ def create_shortened_url(model_instance):
     """
     Ensures random code is unique
     """
+    
 
     random_code = create_random_code()
+    curr_long_url = model_instance.long_url
 
     #get the model class
     model_class = model_instance.__class__
+
+    
 
     if model_class.objects.filter(short_url=random_code).exists():
         #rerun the function
