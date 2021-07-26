@@ -1,4 +1,4 @@
-/urlshortener/config.json
+config.json
 *.log
 *.pot
 *.pyc
