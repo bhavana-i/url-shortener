@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import json
 import os
-# import dotenv
+import dj_database_url
 from decouple import config
 from django.core.exceptions import ImproperlyConfigured
 
@@ -87,16 +87,34 @@ WSGI_APPLICATION = 'urlshortener.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'urlshortener', 
-        'USER': 'postgres', 
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': '127.0.0.1', 
-        'PORT': '5432',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            #'NAME': 'urlshortener', 
+            #'USER': 'postgres', 
+            #'PASSWORD': config('DB_PASSWORD'),
+            #'HOST': '127.0.0.1', 
+            #'PORT': '',
+        }   
     }
-}
+
+    db_from_env = dj_database_url.config(conn_max_age=500)
+    DATABASES['default'].update(db_from_env)
+
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'urlshortener', 
+            'USER': 'postgres', 
+            'PASSWORD': config('DB_PASSWORD'),
+            'HOST': '127.0.0.1', 
+            'PORT': '',
+        }
+    }
+
+
 
 
 # Password validation
