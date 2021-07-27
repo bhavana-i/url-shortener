@@ -6,20 +6,21 @@
         <div class="class-header text-center" py-5>
             <h1>URL Shortener App <i class="fas fa-link px-2"></i></h1>
         </div>
-        <div class="px-3 py-4">
+        <div class="px-3 py-2">
             <form action="" method="POST">
                 {% csrf_token %}
-                <div class="row g-2">
-                    <div class="col-10">{{form.long_url}}</div>
-                    <div class="col-2">
-                        <button class="btn btn-success btn-lg w-100" type="submit">
+                <!-- <div class="row"> -->
+                    <div class="">{{form.long_url}}</div>
+
+                    <div class="col text-center pt-2">
+                        <button class="btn btn-success btn-lg width=mx-auto" type="submit">
                             Shorten
                         </button>
                     </div>
-                </div>
+                <!-- </div> -->
             </form>
         </div>
-        <div class="card-footer text-center text-muted" py-5>
+        <div class="card-footer text-center text-muted" py-2>
             <p>©&nbsp;2021 · <a href="https://wolemercy.com">Oluwole Ajewole</a></p>
         </div>
     </div>

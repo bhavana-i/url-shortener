@@ -7,7 +7,7 @@ from . import models
 
 class ShortenerForm(forms.ModelForm):
     long_url = forms.URLField(widget=forms.URLInput(
-        attrs={"class": "form-control form-control-lg", "placeholder": "Input the URL you want shortened"}
+        attrs={"class": "form-control", "placeholder": "Input the URL you want shortened"}
     ))
 
     class Meta:
