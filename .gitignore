@@ -1,5 +1,5 @@
 config.json
-/config.json
+.env
 *.log
 *.pot
 *.pyc
