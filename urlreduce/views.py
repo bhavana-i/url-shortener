@@ -56,3 +56,4 @@ def redirect_url_view(request, shortened_url):
 
     except:
         raise Http404('Ouch! This link is broken')
+        # return render(request, '404.html', status=404)
