@@ -11,3 +11,4 @@ urlpatterns = [
     path("", home_view, name="home"),
     path('<str:shortened_url>', redirect_url_view, name='redirect'),
 ]
+
