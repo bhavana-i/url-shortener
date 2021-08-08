@@ -20,8 +20,8 @@ The tech stack involved in this project are:
   <li>Programming Language - Python</li>
   <li>Backend  Framework - Django</li>
   <li>Frontend  Framework - Django (with Bootstrap)</li>
-  <li>Server - Apache</li>
   <li>Database - PostgreSQL</li>
+  <li>Hosting - Heroku</li>
 </ul>
 
 **Development**  
