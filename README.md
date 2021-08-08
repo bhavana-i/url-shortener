@@ -1,6 +1,5 @@
-
-An application that reduces the length of URLS  
-**Link to App:** https://weburlshortener.herokuapp.com/
+**URL Shortener App** - An application that reduces the length of URLS  
+**Link:** https://weburlshortener.herokuapp.com/
 
 **Goal**  
 The goal of this project was to build an application that that shortens the length of URLs making them not only easier to share, but also convenient to monitor.
