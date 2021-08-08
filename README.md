@@ -2,6 +2,7 @@
 An application that reduces the length of URLS
 
 **Goals**
+
 The goal of this project was to build an application that that shortens the length of URLs making them not only easier to share, but also convenient to monitor
 
 **Stack**
