@@ -9,22 +9,18 @@ The goal of this project was to build an application that that shortens the leng
 
 The tech stack involved in this project are:
 
-Programming Language - Python
+<ul>
+  <li>Programming Language - Python</li>
+  <li>Backend  Framework - Django</li>
+  <li>Frontend  Framework - Django (with Bootstrap)</li>
+  <li>Server - Apache</li>
+  <li>Database - PostgreSQL</li>
+</ul>
 
-Backend  Framework - Django
-
-Frontend  Framework - Django (with Bootstrap)
-
-Server - Apache
-
-Database - PostgreSQL
-
-**Development**
-
+**Development**  
 The development was done in a Windows environment using Git Bash and Windows Terminal CLIs
 
-**Deployment**
-
+**Deployment**  
 The deployment was handled using Heroku's free-tier cloud resources
 
 
