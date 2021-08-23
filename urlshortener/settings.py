@@ -39,7 +39,7 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 DEBUG = config('DJANGO_DEBUG', cast=bool)
 
 
-ALLOWED_HOSTS = ['weburlshortener.herokuapp.com', '127.0.0.1', '*']
+ALLOWED_HOSTS = ['weburlshortener.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
